@@ -1,3 +1,44 @@
-.container
-  max-width: 1140px
+body
+  margin: 0
+.header
+  background-color: bisque
+  height: 50px
+  &-container
+    height: 100%
+    display: grid
+    place-content: center end
+
+.site-size
   margin: 0 auto
+  max-width: 98%
+
+.grid
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr))
+  grid-gap: 1rem
+
+.btn-cart,
+.buy-btn
+  width: 100px
+  height: 30px
+  border: 1px solid bisque
+  border-radius: 10px
+  &:hover
+    background-color: #c6c4ff
+.buy-btn
+  place-self: center end
+
+.products
+  margin-top: 2%
+
+.product-item
+  padding: 6%
+  border: 1px solid bisque
+
+.product-item
+  box-shadow: 3px 3px 4px 2px #fff0e6
+  grid-gap: 0
+  & h3
+    place-self: center
+  & p
+    padding-left: 5%
