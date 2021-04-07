@@ -1,20 +1,31 @@
+const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+
+function makeGETRequest(url, callback) {
+    return new Promise((resolve, reject) => {
+        let xhr = window.XMLHttpRequest ? new window.XMLHttpRequest() : new window.ActiveXObject;
+        xhr.open("GET", url, true);
+        xhr.onload = () => resolve(callback(xhr.responseText));
+        xhr.onerror = () => reject(console.log(xhr.statusText));
+        xhr.send();
+    });
+}
+
 class ProductsList {
     constructor(container = '.products') {
         this.container = container;
         this.goods = [];
         this.allProducts = [];
-        this._fetchProducts();
+        this._fetchGoods();
     }
 
-    _fetchProducts() {
-        this.goods = [
-            {id: 1, title: 'Notebook', price: 2000},
-            {id: 2, title: 'Mouse', price: 20},
-            {id: 3, title: 'Keyboard', price: 200},
-            {id: 4, title: 'Gamepad', price: 50},
-            {id: 4, title: 'Game', price: 30},
-            {id: 4, title: 'Cable', price: 10},
-        ];
+    _fetchGoods() {
+        return new Promise((resolve) => {
+            makeGETRequest(`${API_URL}/catalogData.json`, (good) => {
+                this.goods = JSON.parse(good);
+                resolve(this.render());
+            })
+        });
+
     }
 
     render() {
@@ -28,54 +39,65 @@ class ProductsList {
 
     getSum() {
         let res = this.allProducts.reduce((sum, item) => sum += item.price, 0);
-        alert(res);
+        alert(res); // todo
     }
 }
 
 class ProductItem {
     constructor(product, img = 'https://place-hold.it/200x150') {
-        this.title = product.title;
+        this.product_name = product.product_name;
         this.price = product.price;
         this.id = product.id;
         this.img = img;
-
     }
 
     render() {
         return `<div class="product-item" data-id="${this.id}">
                 <img src="${this.img}" alt="Some img">
-                <h3>${this.title}</h3>
+                <h3>${this.product_name}</h3>
                 <p>${this.price}</p>
                 <button class="buy-btn">Купить</button>
             </div>`
     }
 }
 
-let list = new ProductsList();
-list.render();
-list.getSum();
-
 class Basket {
-    addProduct() {
+    addToBasket(id) {
 
     }
 
-    removeProduct() {
-
+    deleteFromBasket(id) {
     }
 
-    changeProduct() {
+    calcAllGoods() {
+    }
 
+    basketCount() {
     }
 
     render() {
-
     }
 }
 
 class BasketItem {
-    render() {
+    constructor(id, product_name, price, img = 'https://place-hold.it/200x150') {
+        this.id = id;
+        this.product_name = product_name;
+        this.price = price;
+        this.img = img;
+    }
 
+    render() {
+        return `<div class="basket-item">
+                    <img src="${this.img}" alt="${this.product_name}">
+                    <div class="basket-info">
+                        <h3>${this.product_name}</h3>
+                        <p>${this.price}</p>
+                    </div>
+                    <button class='deleteItem' onclick='deleteItem(${this.id})'>&times;</button>
+                </div>`;
     }
 }
 
+let list = new ProductsList();
+const cart = new Basket();
