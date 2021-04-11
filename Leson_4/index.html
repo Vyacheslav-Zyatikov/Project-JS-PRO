@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replace and Validate</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script async src="js/replace.js"></script>
+    <script async src="js/validator.js"></script>
+</head>
+<body>
+    <p id="text-container">
+        One: 'Hi Mary.' Two: 'Oh, hi.'
+        One: 'How are you doing?'
+        Two: 'I'm doing alright. How about you?'
+        One: 'Not too bad. The weather is great isn't it?'
+        Two: 'Yes. It's absolutely beautiful today.'
+        One: 'I wish it was like this more frequently.'
+        Two: 'Me too.'
+        One: 'So where are you going now?'
+        Two: 'I'm going to meet a friend of mine at the department store.'
+        One: 'Going to do a little shopping?'
+        Two: 'Yeah, I have to buy some presents for my parents.'
+        One: 'What's the occasion?'
+        Two: 'It's their anniversary.'
+        One: 'That's great. Well, you better get going. You don't want to be late.'
+        Two: 'I'll see you next time.'
+        One: 'Sure. Bye.'
+    </p>
+    <button id="replace">Replace</button>
+    <br>
+    <br>
+    <form action="#" class="some" id="myform">
+        <div>
+            <label>
+                Your name <br>
+                <input type="text" name="name" id="name" placeholder="Иван">
+            </label>
+        </div>
+        <div>
+            <label>
+                Your phone <br>
+                <input type="tel" name="phone" id="phone" placeholder="+7(___)___-____">
+<!--                       autofocus="autofocus" required="required"-->
+<!--                       value="+7(___)___-____"-->
+<!--                       pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{4}"-->
+<!--                       placeholder="+7(___)___-____"-->
+            </label>
+        </div>
+        <div>
+            <label>
+                Your email <br>
+                <input type="email" name="email" id="email" placeholder="mymail@mail.ru">
+            </label>
+        </div>
+        <button id="val-btn">Submit</button>
+    </form>
+</body>
+
+</html>
