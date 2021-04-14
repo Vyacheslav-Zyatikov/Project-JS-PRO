@@ -63,7 +63,8 @@ class Validator {
             }
         })
     }
-    // _setCursorPosition(pos, e) {
+    // todo
+    //  _setCursorPosition(pos, e) {
     //     e.focus();
     //     if (e.setSelectionRange) e.setSelectionRange(pos, pos);
     //     else if (e.createTextRange) {
@@ -73,8 +74,8 @@ class Validator {
     //         range.moveStart("character", pos);
     //         range.select()
     //     }
-    // }
     //
+    //todo
     // _mask(e) {
     //     var matrix = this.placeholder,// .defaultValue
     //         i = 0,
@@ -88,15 +89,16 @@ class Validator {
     //     i = matrix.lastIndexOf(val.substr(-1));
     //     i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
     //     setCursorPosition(i, this)
-    // }
+    //      }
 }
 
-// window.addEventListener("DOMContentLoaded", function() {
+// todo
+//  window.addEventListener("DOMContentLoaded", function() {
 //     let input = document.querySelector("#phone");
 //     input.addEventListener("input", mask, false);
 //     input.focus();
 //     setCursorPosition(3, input);
-// })
+//   })
 
 
 
