@@ -36,11 +36,21 @@ button:focus {
   transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
+.btn-cart img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  margin: -4px;
+}
 
 .btn-cart:hover {
   background-color: transparent;
   border-color: #fafafa;
   color: #fafafa;
+}
+.btn-cart:hover img {
+  filter: invert(100%);
+  transition: all ease-in-out 0.4s;
 }
 
 .btn-cart, .logo {
@@ -90,7 +100,7 @@ img {
   background-color: white;
   padding: 20px;
   color: black;
-  width: 350px;
+  width: 300px;
 }
 
 .invisible {
