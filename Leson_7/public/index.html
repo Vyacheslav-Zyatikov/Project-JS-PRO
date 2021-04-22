@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <div id="app">
+        <header class="main-header">
+            <a class="logo-link" href="index.html"><img src="img/logo.png" alt="logo" width="153" height="72"></a>
+            <div class="cartWrap">
+                <search></search>
+                <button class="btn-cart" type="button"><img src="img/basket.png" alt="Корзина" width="30" height="30" @click="isVisibleCart=!isVisibleCart"></button>
+                <cart ref="cart" :visible="isVisibleCart" :cart-items="cartItems" @remove-product="removeProduct"></cart>
+            </div>
+        </header>
+        <main class="main-block">
+            <error ref="error"></error>
+            <products ref="products" :products="filtered" @add-product="addProduct"></products>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/cartComponent.js"></script>
+    <script src="js/productComponent.js"></script>
+    <script src="js/searchComponent.js"></script>
+    <script src="js/errorComponent.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
