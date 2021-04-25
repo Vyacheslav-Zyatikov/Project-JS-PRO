@@ -1,6 +1,5 @@
 const API = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses";
-
-const app = new Vue(
+new Vue(
     {
         el: "#app",
         data: {
@@ -21,17 +20,17 @@ const app = new Vue(
                     })
             },
             postJson(url, data){
-            return fetch(url, {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-                .then(result => result.json())
-                .catch(error => {
-                    this.$refs.error.text = error;
+                return fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
                 })
+                    .then(result => result.json())
+                    .catch(error => {
+                        this.$refs.error.text = error;
+                    })
             },
             putJson(url, data){
                 return fetch(url, {
@@ -46,7 +45,7 @@ const app = new Vue(
                         this.$refs.error.text = error;
                     })
             },
-            
+
             addProduct(item){
                 let find = this.cartItems.find(el => el.id_product === item.id_product);
                 if(find){
@@ -66,7 +65,7 @@ const app = new Vue(
                         })
                 }
             },
-            
+
             removeProduct(item) {
                 this.getJson(`${API}/addToBasket.json`)
                     .then(data => {
@@ -80,7 +79,7 @@ const app = new Vue(
                         }
                     });
             },
-            
+
             filterGoods(value) {
                 const regexp = new RegExp(value, 'i');
                 this.filtered = this.products.filter(product => regexp.test(product.product_name));
@@ -94,12 +93,12 @@ const app = new Vue(
                         this.$data.filtered.push(item);
                     }
                 }),
-            this.getJson(`/api/cart`)
-                .then(data => {
-                    for (let item of data){
-                        this.$data.cartItems.push(item);
-                    }
-                })
+                this.getJson(`/api/cart`)
+                    .then(data => {
+                        for (let item of data){
+                            this.$data.cartItems.push(item);
+                        }
+                    })
         }
     }
 );

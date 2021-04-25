@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div id="app">
-        <header class="main-header">
-            <a class="logo-link" href="index.html"><img src="img/logo.png" alt="logo" width="153" height="72"></a>
-            <div class="cartWrap">
-                <search></search>
-                <button class="btn-cart" type="button"><img src="img/basket.png" alt="Корзина" width="30" height="30" @click="isVisibleCart=!isVisibleCart"></button>
-                <cart ref="cart" :visible="isVisibleCart" :cart-items="cartItems" @remove-product="removeProduct"></cart>
-            </div>
-        </header>
-        <main class="main-block">
-            <error ref="error"></error>
-            <products ref="products" :products="filtered" @add-product="addProduct"></products>
-        </main>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/cartComponent.js"></script>
-    <script src="js/productComponent.js"></script>
-    <script src="js/searchComponent.js"></script>
-    <script src="js/errorComponent.js"></script>
-    <script src="js/main.js"></script>
+<div id="app">
+    <header class="grid grid_header">
+        <a class="logo-link" href="index.html"><img src="img/logo.png" alt="logo" width="153" height="72"></a>
+        <div class="grid cart">
+            <search></search>
+            <button class="btn-cart" type="button" ><img src="img/cart.svg" alt="Корзина" @click="showCart = !showCart">Корзина</button>
+            <cart ref="cart" :visible="isVisibleCart" :cart-items="cartItems" @remove-product="removeProduct"></cart>
+        </div>
+    </header>
+    <main>
+        <error ref="error"></error>
+        <products ref="products" :products="filtered" @add-product="addProduct"></products>
+    </main>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./js/ProductComponent.js"></script>
+<script src="./js/CartComponent.js"></script>
+<script src="./js/searchComponent.js"></script>
+<script src="./js/ErrorComponent.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

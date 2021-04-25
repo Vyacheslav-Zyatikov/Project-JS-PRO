@@ -7,7 +7,7 @@ Vue.component('error', {
     computed: {
         isVisible() {
             return this.text !== ''
-        }  
+        }
     },
     template: `<div class="error-block" v-if="isVisible">
         <p class="error-msg">

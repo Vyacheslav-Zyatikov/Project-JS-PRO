@@ -5,7 +5,7 @@ const cart = require('./cartRouter');
 
 app.use(express.json());
 app.use('/', express.static('public'));
-app.use('/api/cart', cart);
+app.use('./cart', cart);
 
 app.get('/api/products', (req, res) => {
     fs.readFile('server/db/getProducts.json', 'utf-8', (err, data) => {

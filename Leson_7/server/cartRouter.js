@@ -18,5 +18,8 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     handler(req, res, 'change', 'server/db/cartProducts.json');
 });
+router.delete('/:id', (req, res) => {
+    handler(req, res, 'remove', 'server/db/cartProducts.json');
+});
 
 module.exports = router;

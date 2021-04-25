@@ -1,6 +1,6 @@
 [
     {
-        "quantity": 4,
+        "quantity": 8,
         "id_product": 124,
         "product_name": "Клавиатура",
         "price": 2700,
@@ -9,7 +9,7 @@
         "watchImg": "img/keyboard.jpg"
     },
     {
-        "quantity": 4,
+        "quantity": 8,
         "id_product": 457,
         "product_name": "Мышка",
         "price": 1600,
@@ -18,7 +18,7 @@
         "watchImg": "img/mouse.jpg"
     },
     {
-        "quantity": 4,
+        "quantity": 12,
         "id_product": 768,
         "product_name": "Монитор",
         "price": 4500,
@@ -27,7 +27,7 @@
         "watchImg": "img/monitor.jpg"
     },
     {
-        "quantity": 4,
+        "quantity": 12,
         "id_product": 337,
         "product_name": "Ноутбук",
         "price": 9200,
