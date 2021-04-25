@@ -11,13 +11,14 @@ const app = new Vue({
         filtered: [],
         imgCart: 'https://place-hold.it/100x75',
         products: [],
-        imgProduct: 'https://place-hold.it/200x150'
+        imgProduct: 'https://place-hold.it/200x150',
+        error: false
     },
     methods: {
         getJson(url) {
             return fetch(url)
                 .then(result => result.json())
-                .catch(error => console.log(error))
+                .catch (error => this.error = true)
         },
         addProduct(item) {
             this.getJson(`${API}/addToBasket.json`)
@@ -32,6 +33,7 @@ const app = new Vue({
                         }
                     }
                 })
+                .catch (error => this.error = true)
         },
         remove(item) {
             this.getJson(`${API}/addToBasket.json`)
@@ -44,6 +46,7 @@ const app = new Vue({
                         }
                     }
                 })
+                .catch (error => this.error = true)
         },
         filter() {
             let regexp = new RegExp(this.userSearch, 'i');

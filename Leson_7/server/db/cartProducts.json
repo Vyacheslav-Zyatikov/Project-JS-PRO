@@ -1,0 +1,38 @@
+[
+    {
+        "quantity": 8,
+        "id_product": 124,
+        "product_name": "Клавиатура",
+        "price": 2700,
+        "img": "img/bg-keyboard.jpg",
+        "cartImg": "img/sm-keyboard.jpg",
+        "watchImg": "img/keyboard.jpg"
+    },
+    {
+        "quantity": 8,
+        "id_product": 457,
+        "product_name": "Мышка",
+        "price": 1600,
+        "img": "img/bg-mouse.jpg",
+        "cartImg": "img/sm-mouse.jpg",
+        "watchImg": "img/mouse.jpg"
+    },
+    {
+        "quantity": 12,
+        "id_product": 768,
+        "product_name": "Монитор",
+        "price": 4500,
+        "img": "img/bg-monitor.jpg",
+        "cartImg": "img/sm-monitor.jpg",
+        "watchImg": "img/monitor.jpg"
+    },
+    {
+        "quantity": 12,
+        "id_product": 337,
+        "product_name": "Ноутбук",
+        "price": 9200,
+        "img": "img/bg-notebook.jpg",
+        "cartImg": "img/sm-notebook.jpg",
+        "watchImg": "img/notebook.jpg"
+    }
+]

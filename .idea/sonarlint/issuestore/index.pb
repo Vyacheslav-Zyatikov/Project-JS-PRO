@@ -29,3 +29,11 @@ B
 Leson_5/index.html,9\7\9755ac7d31b8751fea4ca3430623d5cd9ace0108
 B
 Leson_5/js/main.js,3\8\38732f0a28a8b9bc1d6a844e09f1ba5ab19a810d
+N
+Leson_5/js/ProductComponent.js,0\7\078a569033e3084ec34ffdb6dce9d213a807bb86
+M
+Leson_5/js/searchComponent.js,d\f\df2f096b46c7fc9a9d2cd4429768b17655ce9bcb
+L
+Leson_5/js/ErrorComponent.js,a\9\a9e56a1227abcaa87312f367179f783df33e8249
+K
+Leson_7/public/img/cart.svg,2\c\2cf7cd041c36a0e388a510c47a43267a49a1f9ec
