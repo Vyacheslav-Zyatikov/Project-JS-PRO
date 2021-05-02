@@ -1,34 +1,42 @@
 [
   {
-    "id_product": 124,
-    "product_name": "Клавиатура",
-    "price": 2700,
-    "img": "img/bg-keyboard.jpg",
-    "cartImg": "img/sm-keyboard.jpg",
-    "watchImg": "img/keyboard.jpg"
+    "id_product": "1",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 49
   },
   {
-    "id_product": 457,
-    "product_name": "Мышка",
-    "price": 1600,
-    "img": "img/bg-mouse.jpg",
-    "cartImg": "img/sm-mouse.jpg",
-    "watchImg": "img/mouse.jpg"
+    "id_product": "2",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 43
   },
   {
-    "id_product": 768,
-    "product_name": "Монитор",
-    "price": 4500,
-    "img": "img/bg-monitor.jpg",
-    "cartImg": "img/sm-monitor.jpg",
-    "watchImg": "img/monitor.jpg"
+    "id_product": "3",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 45
   },
   {
-    "id_product": 337,
-    "product_name": "Ноутбук",
-    "price": 9200,
-    "img": "img/bg-notebook.jpg",
-    "cartImg": "img/sm-notebook.jpg",
-    "watchImg": "img/notebook.jpg"
+    "id_product": "4",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 52
+  },
+  {
+    "id_product": "5",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 43
+  },
+  {
+    "id_product": "6",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 57
+  },
+  {
+    "id_product": "7",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 54
+  },
+  {
+    "id_product": "8",
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 37
   }
 ]
