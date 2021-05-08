@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c13302ff.js" crossorigin="anonymous"></script>
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery/jquery-ui.js"></script>
+    <title>Project JS PRO</title>
+</head>
+<body>
+<div id="app">
+    <header class="header">
+        <div class="container-header-up">
+            <div class="container-header max-width">
+                <div class="header-left">
+                    <a class="logo" href="index.html">
+                        <img src="image/logo.png" alt="logo">
+                        <h2 class="logo-h2">BRAN<span class="logo-end">D</span></h2>
+                    </a>
+                    <div class="container">
+                        <details>
+                            <summary class="browse">Browse <i class="fas fa-caret-down"></i></summary>
+                            <div class="drop-down">
+                                <div class="drop-down-item-box">
+                                    <h3 class="mega-hading">Women</h3>
+                                    <div class="mega-item">
+                                        <ul>
+                                            <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                            <li><a class="mega-link" href="product.html">Tops</a></li>
+                                            <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                            <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                            <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                            <li><a class="mega-link" href="product.html">Denim</a></li>
+                                            <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                            <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                            <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="drop-down-item-box">
+                                    <h3 class="mega-hading">Men</h3>
+                                    <div class="mega-item">
+                                        <ul>
+                                            <li><a class="mega-link" href="product.html">Tees/Tank tops</a></li>
+                                            <li><a class="mega-link" href="product.html">Shirts/Polos</a></li>
+                                            <li><a class="mega-link" href="product.html">Sweaters</a></li>
+                                            <li><a class="mega-link" href="product.html">Sweatshirts/Hoodies</a></li>
+                                            <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                            <li><a class="mega-link" href="product.html">Jackets/vests</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                        <filter-el></filter-el>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <cart ref="cart"></cart>
+                    <button class="header-right-button transition-all">My Account <i
+                            class="fas fa-caret-down transition-all"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container container-header-down">
+            <nav>
+                <ul class="main-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                        <div class="mega-box mega-box__home">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Home</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Home</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Home</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Home</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Man</a>
+                        <div class="mega-box mega-box__man">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Man</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Man</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Man</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Man</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Women</a>
+                        <div class="mega-box mega-box__women">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Women</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Women</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Women</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Women</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Kids</a>
+                        <div class="mega-box mega-box__kids">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Kids</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Kids</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Kids</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Kids</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Accoseriese</a>
+                        <div class="mega-box mega-box__accoseriese">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Accoseriese</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Accoseriese</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Accoseriese</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Accoseriese</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Featured</a>
+                        <div class="mega-box mega-box__featured">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Featured</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Featured</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Featured</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Featured</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Hot Deals</a>
+                        <div class="mega-box mega-box__hot-deals">
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Hot Deals</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                        <li><a class="mega-link" href="product.html">Blazers</a></li>
+                                        <li><a class="mega-link" href="product.html">Denim</a></li>
+                                        <li><a class="mega-link" href="product.html">Leggings/Pants</a></li>
+                                        <li><a class="mega-link" href="product.html">Skirts/Shorts</a></li>
+                                        <li><a class="mega-link" href="product.html">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Hot Deals</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Hot Deals</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <h3 class="mega-hading">Hot Deals</h3>
+                                <div class="mega-item">
+                                    <ul>
+                                        <li><a class="mega-link" href="product.html">Dresses</a></li>
+                                        <li><a class="mega-link" href="product.html">Tops</a></li>
+                                        <li><a class="mega-link" href="product.html">Sweaters/Knits</a></li>
+                                        <li><a class="mega-link" href="product.html">Jackets/Coats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mega-item-box">
+                                <div class="mega-item-promo">
+                                    <div class="mega-item-div-promo-img"><a class="mega-item-div-promo-a"
+                                                                            href="product.html"><img
+                                            src="image/promo_ad.jpg" alt="promo"></a></div>
+                                    <div class="mega-item-div-promo-p">
+                                        <p class="mega-item-promo-p">Super <br>sale!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-breadcrumb">
+            <div class="container-breadcrumb max-width">
+                <div class="breadcrumb__h2"><h2 class="breadcrumb__h2">New Arrivals</h2></div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Men</a></li>
+                        <li class="breadcrumb-item breadcrumb-link breadcrumb-link__active" aria-current="page">New
+                            Arrivals
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section-main-product">
+        <div class="flex flex-col-nowrap center-center max-width">
+            <div class="grid grid-container main-product__box">
+                <div class="grid grid-container left-sidebar">
+                    <details open class="left-sidebar__items">
+                        <summary class="left-sidebar-menu__items-summary">Category</summary>
+                        <div class="left-sidebar-menu__items-box">
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">Accessories</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                                Sweatshirts</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                                Coats</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                                Knits</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">T-Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="left-sidebar__items">
+                        <summary class="left-sidebar-menu__items-summary">BRAND</summary>
+                        <div class="left-sidebar-menu__items-box">
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">Accessories</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                                Sweatshirts</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                                Coats</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                                Knits</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">T-Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="left-sidebar__items">
+                        <summary class="left-sidebar-menu__items-summary">DESIGNER</summary>
+                        <div class="left-sidebar-menu__items-box">
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">Accessories</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                                Sweatshirts</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                                Coats</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                                Knits</a></div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link"
+                                                                     href="">T-Shirts</a>
+                            </div>
+                            <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <div class="grid grid-container content">
+                    <div class="grid content-settings">
+                        <div class="grid content-settings__up">
+                            <div class="grid content-settings__trend">
+                                <h3 class="main-product__h3 main-product__h3-trend">Trending now</h3>
+                                <div class="checkbox-btn-box">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Bohemian</span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Floral</span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Lace</span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Floral</span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Lace</span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span>Bohemian</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid content-settings__size">
+                                <h3 class="main-product__h3 main-product__h3-size">Size</h3>
+                                <input name="size" id="size-XXS" type="checkbox"><label for="size-XXS">XXS</label>
+                                <input name="size" id="size-XS" type="checkbox"><label for="size-XS">XS</label>
+                                <input name="size" id="size-S" type="checkbox"><label for="size-S">S</label>
+                                <input name="size" id="size-M" type="checkbox"><label for="size-M">M</label>
+                                <input name="size" id="size-L" type="checkbox"><label for="size-L">L</label>
+                                <input name="size" id="size-XL" type="checkbox"><label for="size-XL">XL</label>
+                                <input name="size" id="size-XXL" type="checkbox"><label for="size-XXL">XXL</label>
+                            </div>
+                            <div class="grid content-settings__price">
+                                <h3 class="main-product__h3 main-product__h3-price">PRICE</h3>
+                                <div class="polzunok-5 main-product__range-price transition-all"></div>
+                                <label class="main-product__range-price-label-left">
+                                    <input type="text" class="polzunok-input-5-left"/>
+                                </label>
+                                <label class="main-product__range-price-label-right">
+                                    <input type="text" class="polzunok-input-5-right"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="grid content-settings__sort">
+                            <div class="grid content-settings__sort-box">
+                                <div class="grid grid-container sort-h3-box"><h3 class="sort-h3">Sort By</h3></div>
+                                <div class="grid sort-details-box">
+                                    <details class="grid grid-container sort-details">
+                                        <summary class="grid sort-details-summary">
+                                            <div class="grid sort-details-summary__items"><p
+                                                    class="sort-details-summary__items-p">
+                                                Name</p>
+                                                <p class="items-button__color-name items-button__color-name-i sort-details-summary__items-angle">
+                                                    <i
+                                                            class="fas fa-caret-down"></i></p>
+                                            </div>
+                                        </summary>
+                                        <div class="grid sort-details-box-in">
+                                            <div class="grid grid-container">
+                                                <div class=""><h4 class="">L</h4>
+                                                </div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">M</h4></div>
+                                                </div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">S</h4></div>
+                                                </div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">XS</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="grid content-settings__show-box">
+                                <div class="grid grid-container sort-h3-box"><h3 class="sort-h3">Show</h3></div>
+                                <div class="grid sort-details-box">
+                                    <details class="grid grid-container sort-details">
+                                        <summary class="grid sort-details-summary">
+                                            <div class="grid sort-details-summary__items"><p
+                                                    class="sort-details-summary__items-p">
+                                                09</p>
+                                                <p class="items-button__color-name items-button__color-name-i sort-details-summary__items-angle">
+                                                    <i
+                                                            class="fas fa-caret-down"></i></p>
+                                            </div>
+                                        </summary>
+                                        <div class="grid sort-details-box-in">
+                                            <div class="grid grid-container">
+                                                <div class="grid grid-container"><h4 class="">08</h4></div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">07</h4></div>
+                                                </div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">06</h4></div>
+                                                </div>
+                                                <div class="grid grid-container">
+                                                    <div class=""><h4 class="">05</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <error ref="error"></error>
+                    <products ref="products"></products>
+                    <div class="grid pagination">
+                        <div class="grid pagination-box">
+                            <nav>
+                                <ul class="grid pagination-menu">
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="#"><i class="fas fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="pagination-item pagination-item-active">
+                                        <a class="pagination-item__link" href="product.html">1</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">4</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">5</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">6</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">7</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">....</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html">20</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a class="pagination-item__link" href="product.html"><i
+                                                class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <button class="pagination-button transition-all">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-feature section-feature-product">
+        <div class="container-feature-product max-width">
+            <div class="article-box article-box-product">
+                <article class="article-box-items article-box-items-product">
+                    <div class="article-box-items-img"><img class="article-box-items-img" src="image/forma_1_1.svg"
+                                                            alt="">
+                    </div>
+                    <div class="article-box-items-product-text">
+                        <h3 class="article-box-items-h3 article-box-items-product-h3">Free Delivery</h3>
+                        <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                            next-generation innov tion with extensive models.</p>
+                    </div>
+                </article>
+                <article class="article-box-items article-box-items-product">
+                    <div class="article-box-items-img"><img class="article-box-items-img" src="image/forma_1_2.svg"
+                                                            alt="">
+                    </div>
+                    <div class="article-box-items-product-text">
+                        <h3 class="article-box-items-h3">Sales &amp;&nbsp;discounts</h3>
+                        <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov tion with extensive models.</p>
+                    </div>
+                </article>
+                <article class="article-box-items article-box-items-product">
+                    <div class="article-box-items-img"><img class="article-box-items-img" src="image/forma_1_3.svg"
+                                                            alt="">
+                    </div>
+                    <div class="article-box-items-product-text">
+                        <h3 class="article-box-items-h3">Quality assurance</h3>
+                        <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov tion with extensive models.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section-subscrube">
+        <div class="container-section-subscrube max-width">
+            <div class="slider-reviews">
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="div-slider-inner">
+                            <div class="slider-contents">
+                                <div class="slider-img"><img class="slider-img-photo" src="image/subscrube_1.png"
+                                                             alt="photo"></div>
+                                <div class="slider-text">
+                                    <p class="slider-txt">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                        pulvinar purus condimentuma. Aliquam condimentum mattis neque sed pretium”</p>
+                                    <h3 class="slider-caption"><span class="slider-caption-s">Bin Burhan</span> <br>Dhaka,
+                                        Bd</h3>
+                                </div>
+                            </div>
+                            <div class="div-slider-nav">
+                                <input type="radio" name="slider" title="slide1" class="slider-nav transition-all"/>
+                                <input type="radio" name="slider" title="slide2" checked="checked"
+                                       class="slider-nav transition-all"/>
+                                <input type="radio" name="slider" title="slide3" class="slider-nav transition-all"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscrube">
+                <div class="div-subscrube-h3">
+                    <h3 class="subscrube-h3"><span class="subscrube-h3-s">Subscribe</span> <br>FOR OUR NEWLETTER AND
+                        PROMOTION</h3>
+                </div>
+                <div class="div-subscrube-input"><label>
+                    <input class="subscrube-input" type="email" placeholder="Enter Your Email">
+                </label>
+                    <input class="subscrube-submit" type="submit">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container max-width">
+            <div class="footer-container-up">
+                <div class="footer-container-up__items-1">
+                    <div class="logo-footer">
+                        <a class="logo" href="index.html">
+                            <img src="image/logo.png" alt="logo">
+                            <h2 class="logo-h2">BRAN<span class="logo-end">D</span></h2>
+                        </a>
+                    </div>
+                    <div class="logo-footer-div-p">
+                        <p class="logo-footer-p">Objectively transition extensive data rather than cross functional
+                            solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                            Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br> <br>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                            <br>
+                            Objectively strategize seamless relationships via resource sucking testing procedures.
+                            Proactively cultivate next-generation results for value-added methodologies. Dynamically
+                            plagiarize unique methodologies after performance based methodologies. Monotonectally
+                            empower
+                            stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource
+                            sucking scenarios after alternative synergy. <br>
+                            Compellingly envisioneer corporate methods of empowerment before standards compliant
+                            technologies. Objectively facilitate progressive.</p>
+                    </div>
+                </div>
+                <div class="footer-container-up__items-2">
+                    <h2 class="footer-h2">COMPANY</h2>
+                    <ul>
+                        <li><a class="footer-a" href="index.html">Home</a></li>
+                        <li><a class="footer-a" href="product.html">Shop</a></li>
+                        <li><a class="footer-a" href="index.html">About</a></li>
+                        <li><a class="footer-a" href="index.html">How It Works</a></li>
+                        <li><a class="footer-a" href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-up__items-3">
+                    <h2 class="footer-h2">INFORMATION</h2>
+                    <ul>
+                        <li><a class="footer-a" href="product.html">Tearms &amp;&nbsp;Condition</a></li>
+                        <li><a class="footer-a" href="product.html">Privacy Policy</a></li>
+                        <li><a class="footer-a" href="product.html">How to Buy</a></li>
+                        <li><a class="footer-a" href="product.html">How to Sell</a></li>
+                        <li><a class="footer-a" href="product.html">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-up__items-4">
+                    <h2 class="footer-h2">SHOP CATEGORY</h2>
+                    <ul>
+                        <li><a class="footer-a" href="product.html">Men</a></li>
+                        <li><a class="footer-a" href="product.html">Women</a></li>
+                        <li><a class="footer-a" href="product.html">Child</a></li>
+                        <li><a class="footer-a" href="product.html">Apparel</a></li>
+                        <li><a class="footer-a" href="product.html">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="div-footer-container-down">
+            <div class="footer-container-down max-width">
+                <p class="footer-container-down-p">&copy;&nbsp;2017 Brand All Rights Reserved.</p>
+                <div class="div-icon">
+                    <div class="footer-icon"><a class="icon-a footer-icon transition-all"
+                                                href="https://ru-ru.facebook.com/"><i
+                            class="fab fa-facebook transition-all"></i></a></div>
+                    <div class="footer-icon"><a class="icon-a footer-icon transition-all" href="https://twitter.com/"><i
+                            class="fab fa-twitter transition-all"></i></a></div>
+                    <div class="footer-icon"><a class="icon-a footer-icon transition-all"
+                                                href="https://www.linkedin.cn"><i
+                            class="fab fa-linkedin-in transition-all"></i></a>
+                    </div>
+                    <div class="footer-icon"><a class="icon-a footer-icon transition-all"
+                                                href="https://www.pinterest.ru/"><i
+                            class="fab fa-pinterest-p transition-all"></i></a>
+                    </div>
+                    <div class="footer-icon"><a class="icon-a footer-icon transition-all"
+                                                href="https://myaccount.google.com"><i
+                            class="fab fa-google-plus-g transition-all"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    "use strict";
+    $(".polzunok-5").slider({
+        min: 0,
+        max: 700,
+        values: [52, 400],
+        range: true,
+        animate: "fast",
+        slide: function (event, ui) {
+            $(".polzunok-input-5-left").val("$" + ui.values[0]);
+            $(".polzunok-input-5-right").val("$" + ui.values[1]);
+        }
+    });
+    $(".polzunok-input-5-left").val("$" + $(".polzunok-5").slider("values", 0));
+    $(".polzunok-input-5-right").val("$" + $(".polzunok-5").slider("values", 1));
+    $(".polzunok-container-5 input").change(function () {
+        let input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),
+            opt_left = $(".polzunok-5").slider("option", "min"),
+            where_right = $(".polzunok-5").slider("values", 1),
+            input_right = $(".polzunok-input-5-right").val().replace(/[^0-9]/g, ''),
+            opt_right = $(".polzunok-5").slider("option", "max"),
+            where_left = $(".polzunok-5").slider("values", 0);
+        if (input_left > where_right) {
+            input_left = where_right;
+        }
+        if (input_left < opt_left) {
+            input_left = opt_left;
+        }
+        if (input_left === "") {
+            input_left = 0;
+        }
+        if (input_right < where_left) {
+            input_right = where_left;
+        }
+        if (input_right > opt_right) {
+            input_right = opt_right;
+        }
+        if (input_right === "") {
+            input_right = 0;
+        }
+        $(".polzunok-input-5-left").val(input_left);
+        $(".polzunok-input-5-right").val(input_right);
+        if (input_left !== where_left) {
+            $(".polzunok-5").slider("values", 0, input_left);
+        }
+        if (input_right !== where_right) {
+            $(".polzunok-5").slider("values", 1, input_right);
+        }
+    });
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./js/ProductComponent.js"></script>
+<script src="./js/CartComponent.js"></script>
+<script src="./js/FilterComp.js"></script>
+<script src="./js/ErrorComp.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Mango MAN T-shirt",
+    "price": 75,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 2,
+    "product_name": "Mango MAN T-shirt",
+    "price": 54,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 3,
+    "product_name": "Mango MAN T-shirt",
+    "price": 67,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 4,
+    "product_name": "Mango MAN T-shirt",
+    "price": 85,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 5,
+    "product_name": "Mango MAN T-shirt",
+    "price": 42,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 6,
+    "product_name": "Mango MAN T-shirt",
+    "price": 40,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 7,
+    "product_name": "Mango MAN T-shirt",
+    "price": 53,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 8,
+    "product_name": "Mango MAN T-shirt",
+    "price": 44,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 9,
+    "product_name": "Mango MAN T-shirt",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 10,
+    "product_name": "Mango MAN T-shirt",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 11,
+    "product_name": "Mango WOMAN T-shirt",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 12,
+    "product_name": "Mango WOMAN T-shirt",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 13,
+    "product_name": "Mango WOMAN T-shirt",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  },
+  {
+    "id_product": 14,
+    "product_name": "Mango MAN",
+    "price": 84,
+    "color": ["red", "green", "blue","yellow"],
+    "size": ["XS", "S", "M","L","XL","XXL","XXXL"]
+  }
+]
