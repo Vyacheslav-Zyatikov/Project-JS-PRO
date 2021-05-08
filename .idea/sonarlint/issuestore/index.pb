@@ -77,3 +77,25 @@ I
 best/public/checkout.html,9\9\99c76b03127357677c328bac1d1595823b8872d3
 L
 best/public/single-page.html,2\7\2702701b97175146fe106481dc898fd981519648
+L
+best/server/db/products.json,9\0\9076100d14879e69fb8351c546f6f3fcb4b64200
+F
+best/public/js/main.js,2\e\2e43a53ca23674ee410b5f1eda7c34880b97c3e8
+F
+best/server/handler.js,4\d\4da070fb461018a795992b32e79da3172fd43d42
+C
+best/server/cart.js,e\b\eb21e5b0945fed850a255aba7bb31b72b31101b9
+R
+"best/public/js/ProductComponent.js,1\f\1f0afab2b99f1905d2b3a67f05fb2b71e00ee9dc
+K
+best/public/js/ErrorComp.js,0\a\0a25dc47153a838f125f90a282751821e9ed230d
+O
+best/public/js/CartComponent.js,6\c\6c1df9838dc03622d546ab855ed88a6ada63aa55
+L
+best/server/db/userCart.json,e\5\e5f7a7499fd282ac931215966de56363d3d8965a
+N
+best/public/shopping-cart.html,4\5\45a915721afb2585448b97a536539e55fa0f3a1c
+J
+best/public/css/style.sass,a\6\a6b42e93f14609fc4bb41616314c5d57b0fb3cf4
+F
+best/public/index.html,2\1\21b6368b911ff9e8fdcb1b23f30ec7bda83e0f77
